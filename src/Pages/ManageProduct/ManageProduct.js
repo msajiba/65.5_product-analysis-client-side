@@ -11,7 +11,7 @@ const ManageProduct = () => {
     const productDeleteHandler = id => {
         const process = window.confirm('Are you sure delete product ?');
         if(process){
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://scenic-grand-canyon-86539.herokuapp.com/product/${id}`;
             fetch(url, {
                 method : 'DELETE',
             })

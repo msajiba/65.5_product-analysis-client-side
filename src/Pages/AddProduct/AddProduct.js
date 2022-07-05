@@ -7,7 +7,7 @@ const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         
-        fetch('http://localhost:5000/product', {
+        fetch('https://scenic-grand-canyon-86539.herokuapp.com/product', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {

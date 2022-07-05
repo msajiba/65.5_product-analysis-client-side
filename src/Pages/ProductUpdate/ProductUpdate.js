@@ -10,7 +10,7 @@ const ProductUpdate = () => {
 
     useEffect(()=> {
 
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://scenic-grand-canyon-86539.herokuapp.com/product/${id}`;
         fetch(url)
         .then(res=> res.json())
         .then(data=> setProduct(data));
@@ -21,7 +21,7 @@ const ProductUpdate = () => {
 
     const onSubmit = data => {
 
-        const url = `http://localhost:5000/product/${id}`;
+        const url = `https://scenic-grand-canyon-86539.herokuapp.com/product/${id}`;
         fetch(url, {
             method: 'PUT',
             body: JSON.stringify(data),

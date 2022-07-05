@@ -5,7 +5,7 @@ const useProducts = () => {
 
     useEffect(()=> {
 
-        fetch('http://localhost:5000/products')
+        fetch('https://scenic-grand-canyon-86539.herokuapp.com/products')
         .then(res=> res.json())
         .then(data=> setProducts(data));
 
